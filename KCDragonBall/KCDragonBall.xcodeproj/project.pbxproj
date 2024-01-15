@@ -16,6 +16,11 @@
 		527860662B53CED1004921C3 /* KCDragonBallUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527860652B53CED1004921C3 /* KCDragonBallUITestsLaunchTests.swift */; };
 		527860782B55B420004921C3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527860762B55B420004921C3 /* LoginViewController.swift */; };
 		527860792B55B420004921C3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527860772B55B420004921C3 /* LoginViewController.xib */; };
+		5278607C2B55B9CB004921C3 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278607B2B55B9CB004921C3 /* APIClient.swift */; };
+		5278607E2B55BADB004921C3 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278607D2B55BADB004921C3 /* NetworkModel.swift */; };
+		527860802B55C501004921C3 /* DragonBallHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278607F2B55C501004921C3 /* DragonBallHero.swift */; };
+		527860822B55C529004921C3 /* DGHeroTransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527860812B55C529004921C3 /* DGHeroTransformation.swift */; };
+		527860842B55CC04004921C3 /* LocalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527860832B55CC04004921C3 /* LocalDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		527860652B53CED1004921C3 /* KCDragonBallUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCDragonBallUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		527860762B55B420004921C3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		527860772B55B420004921C3 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		5278607B2B55B9CB004921C3 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		5278607D2B55BADB004921C3 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		5278607F2B55C501004921C3 /* DragonBallHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallHero.swift; sourceTree = "<group>"; };
+		527860812B55C529004921C3 /* DGHeroTransformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGHeroTransformation.swift; sourceTree = "<group>"; };
+		527860832B55CC04004921C3 /* LocalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				527860722B55B3B9004921C3 /* Login */,
-				527860422B53CED0004921C3 /* AppDelegate.swift */,
+				5278607A2B55B983004921C3 /* Models */,
 				527860442B53CED0004921C3 /* SceneDelegate.swift */,
+				527860422B53CED0004921C3 /* AppDelegate.swift */,
 				5278604B2B53CED1004921C3 /* Assets.xcassets */,
 				5278604D2B53CED1004921C3 /* LaunchScreen.storyboard */,
 				527860502B53CED1004921C3 /* Info.plist */,
@@ -149,6 +160,18 @@
 				527860772B55B420004921C3 /* LoginViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5278607A2B55B983004921C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5278607B2B55B9CB004921C3 /* APIClient.swift */,
+				5278607D2B55BADB004921C3 /* NetworkModel.swift */,
+				5278607F2B55C501004921C3 /* DragonBallHero.swift */,
+				527860812B55C529004921C3 /* DGHeroTransformation.swift */,
+				527860832B55CC04004921C3 /* LocalDataModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +307,12 @@
 			files = (
 				527860782B55B420004921C3 /* LoginViewController.swift in Sources */,
 				527860432B53CED0004921C3 /* AppDelegate.swift in Sources */,
+				527860822B55C529004921C3 /* DGHeroTransformation.swift in Sources */,
 				527860452B53CED0004921C3 /* SceneDelegate.swift in Sources */,
+				5278607E2B55BADB004921C3 /* NetworkModel.swift in Sources */,
+				527860842B55CC04004921C3 /* LocalDataModel.swift in Sources */,
+				5278607C2B55B9CB004921C3 /* APIClient.swift in Sources */,
+				527860802B55C501004921C3 /* DragonBallHero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
