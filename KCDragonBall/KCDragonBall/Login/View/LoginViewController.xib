@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="KCDragonBall" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="S77-uL-m3A" id="u2p-W8-Xe1"/>
+                <outlet property="passwordTextField" destination="e6d-Bw-72M" id="X2W-Mm-TdK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -38,7 +40,7 @@
                                         <constraint firstAttribute="height" constant="44" id="fXN-sN-Y2J"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" textContentType="password"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                 </textField>
                             </subviews>
                         </stackView>
@@ -49,6 +51,9 @@
                             </constraints>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="filled" title="LOGIN"/>
+                            <connections>
+                                <action selector="didTapContinueButton:" destination="-1" eventType="touchUpInside" id="fqA-of-WbN"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>

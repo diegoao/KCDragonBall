@@ -8,22 +8,35 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
+    // MARK: - Outlets
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Model
+    private let model = NetworkModel.shared
+        
+    // MARK: - Acciones
+    
+    @IBAction func didTapContinueButton( _ sender: Any ){
+        model.login(
+            user: emailTextField.text ?? "",
+            password: passwordTextField.text ?? ""
+        ) { [weak self] result in
+            guard let self else { return }
+            switch result {
+                case let .success(token):
+                    // Navega al ViewController de Heroes
+                print(token)
+                    break
+                case let .failure(error):
+                    print("🔴 \(error)")
+            }
+        }
     }
-    */
-
 }
+
