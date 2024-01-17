@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52485EA92B570E9900C8658B /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52485EA72B570E9900C8658B /* HeroTableViewCell.swift */; };
+		52485EAA2B570E9900C8658B /* HeroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52485EA82B570E9900C8658B /* HeroTableViewCell.xib */; };
+		52485EAD2B57154700C8658B /* UImageView+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52485EAC2B57154700C8658B /* UImageView+Remote.swift */; };
 		527860432B53CED0004921C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527860422B53CED0004921C3 /* AppDelegate.swift */; };
 		527860452B53CED0004921C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527860442B53CED0004921C3 /* SceneDelegate.swift */; };
 		5278604C2B53CED1004921C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5278604B2B53CED1004921C3 /* Assets.xcassets */; };
@@ -21,6 +24,8 @@
 		527860802B55C501004921C3 /* DragonBallHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278607F2B55C501004921C3 /* DragonBallHero.swift */; };
 		527860822B55C529004921C3 /* DGHeroTransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527860812B55C529004921C3 /* DGHeroTransformation.swift */; };
 		527860842B55CC04004921C3 /* LocalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527860832B55CC04004921C3 /* LocalDataModel.swift */; };
+		527860882B570191004921C3 /* HeroListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527860862B570191004921C3 /* HeroListTableViewController.swift */; };
+		527860892B570191004921C3 /* HeroListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527860872B570191004921C3 /* HeroListTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52485EA72B570E9900C8658B /* HeroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTableViewCell.swift; sourceTree = "<group>"; };
+		52485EA82B570E9900C8658B /* HeroTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroTableViewCell.xib; sourceTree = "<group>"; };
+		52485EAC2B57154700C8658B /* UImageView+Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UImageView+Remote.swift"; sourceTree = "<group>"; };
 		5278603F2B53CED0004921C3 /* KCDragonBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KCDragonBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		527860422B53CED0004921C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		527860442B53CED0004921C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +67,8 @@
 		5278607F2B55C501004921C3 /* DragonBallHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallHero.swift; sourceTree = "<group>"; };
 		527860812B55C529004921C3 /* DGHeroTransformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGHeroTransformation.swift; sourceTree = "<group>"; };
 		527860832B55CC04004921C3 /* LocalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataModel.swift; sourceTree = "<group>"; };
+		527860862B570191004921C3 /* HeroListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListTableViewController.swift; sourceTree = "<group>"; };
+		527860872B570191004921C3 /* HeroListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroListTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52485EAB2B57152A00C8658B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52485EAC2B57154700C8658B /* UImageView+Remote.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		527860362B53CED0004921C3 = {
 			isa = PBXGroup;
 			children = (
@@ -109,10 +127,12 @@
 		527860412B53CED0004921C3 /* KCDragonBall */ = {
 			isa = PBXGroup;
 			children = (
+				52485EAB2B57152A00C8658B /* Extensions */,
 				527860722B55B3B9004921C3 /* Login */,
 				5278607A2B55B983004921C3 /* Models */,
-				527860442B53CED0004921C3 /* SceneDelegate.swift */,
+				527860852B570130004921C3 /* HeroesList */,
 				527860422B53CED0004921C3 /* AppDelegate.swift */,
+				527860442B53CED0004921C3 /* SceneDelegate.swift */,
 				5278604B2B53CED1004921C3 /* Assets.xcassets */,
 				5278604D2B53CED1004921C3 /* LaunchScreen.storyboard */,
 				527860502B53CED1004921C3 /* Info.plist */,
@@ -172,6 +192,17 @@
 				527860832B55CC04004921C3 /* LocalDataModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		527860852B570130004921C3 /* HeroesList */ = {
+			isa = PBXGroup;
+			children = (
+				527860862B570191004921C3 /* HeroListTableViewController.swift */,
+				527860872B570191004921C3 /* HeroListTableViewController.xib */,
+				52485EA72B570E9900C8658B /* HeroTableViewCell.swift */,
+				52485EA82B570E9900C8658B /* HeroTableViewCell.xib */,
+			);
+			path = HeroesList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +310,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5278604F2B53CED1004921C3 /* LaunchScreen.storyboard in Resources */,
+				527860892B570191004921C3 /* HeroListTableViewController.xib in Resources */,
+				52485EAA2B570E9900C8658B /* HeroTableViewCell.xib in Resources */,
 				5278604C2B53CED1004921C3 /* Assets.xcassets in Resources */,
 				527860792B55B420004921C3 /* LoginViewController.xib in Resources */,
 			);
@@ -305,6 +338,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				527860882B570191004921C3 /* HeroListTableViewController.swift in Sources */,
+				52485EAD2B57154700C8658B /* UImageView+Remote.swift in Sources */,
 				527860782B55B420004921C3 /* LoginViewController.swift in Sources */,
 				527860432B53CED0004921C3 /* AppDelegate.swift in Sources */,
 				527860822B55C529004921C3 /* DGHeroTransformation.swift in Sources */,
@@ -313,6 +348,7 @@
 				527860842B55CC04004921C3 /* LocalDataModel.swift in Sources */,
 				5278607C2B55B9CB004921C3 /* APIClient.swift in Sources */,
 				527860802B55C501004921C3 /* DragonBallHero.swift in Sources */,
+				52485EA92B570E9900C8658B /* HeroTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,8 +11,9 @@ import Foundation
 // Quicktype y pego el archivo json. me devuelve la estructura que necesito
 
 // MARK: - HeroTransformation
-struct DragonBallHero: Codable {
+struct DragonBallHero: Codable, Hashable {
     let id: String
     let photo: String
     let name, description: String
 }
+

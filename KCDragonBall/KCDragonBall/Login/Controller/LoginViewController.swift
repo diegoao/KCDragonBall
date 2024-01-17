@@ -27,12 +27,12 @@ class LoginViewController: UIViewController {
             user: emailTextField.text ?? "",
             password: passwordTextField.text ?? ""
         ) { [weak self] result in
-            guard let self else { return }
             switch result {
                 case let .success(token):
-                    // Navega al ViewController de Heroes
-                print(token)
-                    break
+                    DispatchQueue.main.async {
+                        let heroesListViewController = HeroListTableViewController()
+                        self?.navigationController?.setViewControllers([heroesListViewController], animated: true)
+                    }
                 case let .failure(error):
                     print("🔴 \(error)")
             }

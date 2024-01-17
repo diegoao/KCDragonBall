@@ -16,3 +16,5 @@ struct DGHeroTransformation: Codable {
     let photo: String
     let id, description: String
 }
+
+
