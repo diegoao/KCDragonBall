@@ -12,6 +12,9 @@ final class HeroListTableViewController: UITableViewController {
     typealias Snapshot = NSDiffableDataSourceSnapshot<Int, DragonBallHero>
     private let model: NetworkModel = .shared
     private var dataSource: DataSource?
+    private var heroes: [DragonBallHero] = []
+
+
 
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -24,10 +27,9 @@ final class HeroListTableViewController: UITableViewController {
                     var snapshot = Snapshot()
                     snapshot.appendSections([0])
                     snapshot.appendItems(listHeroData)
-                   print(listHeroData)
+                    self?.heroes = listHeroData
+                  //  print(listHeroData)
                     self?.dataSource?.apply(snapshot)
-                    print(listHeroData)
-
                 case let .failure(error):
                     print("🔴 \(error)")
                 
@@ -37,7 +39,7 @@ final class HeroListTableViewController: UITableViewController {
         tableView.register(
             UINib(nibName: HeroTableViewCell.identifier, bundle: nil),
             forCellReuseIdentifier: HeroTableViewCell.identifier)
-        
+          
     
         
         dataSource = DataSource(tableView: tableView) { tableView, indexPath, heroe in
@@ -60,25 +62,25 @@ final class HeroListTableViewController: UITableViewController {
 // MARK: - Configuration
 private extension HeroListTableViewController {
     func setUpView() {
-        title = "HEROES"
+        title = "LISTADO PERSONAJES"
     }
 }
 
 // MARK: - TableView Delegate
 extension HeroListTableViewController {
-//    override func tableView(
-//        _ tableView: UITableView,
-//        didSelectRowAt indexPath: IndexPath
-//    ) {
-//        let house = houses[indexPath.row]
-//        let detailViewController = HouseDetailViewController(house: house)
-//        navigationController?.show(detailViewController, sender: nil)
-//    }
+    override func tableView(
+        _ tableView: UITableView,
+        didSelectRowAt indexPath: IndexPath
+    ) {
+        let heroe = self.heroes[indexPath.row]
+        let detailViewController = DetailHeroesViewController(heroe: heroe)
+        navigationController?.show(detailViewController, sender: nil)
+    }
  
     override func tableView(
         _ tableView: UITableView,
         heightForRowAt indexPath: IndexPath
     ) -> CGFloat {
-        180
+        120
     }
 }
