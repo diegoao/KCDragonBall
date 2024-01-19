@@ -11,6 +11,7 @@ final class NetworkModel{
     
     static let shared = NetworkModel()
     
+    
     private var token: String? {
         get {
             if let token = LocalDataModel.getToken(){
@@ -110,5 +111,34 @@ final class NetworkModel{
         urlRequest.httpBody = urlComponents.query?.data(using: .utf8)
         
         client.request(urlRequest, using: [DragonBallHero].self, completion: completion)
+    }
+    
+    func getTrasnformation( id: String,
+        completion: @escaping (Result<[DGHeroTransformation], KCDragonBallError>) -> Void
+    ) {
+        var components = baseComponents
+        components.path = "/api/heros/tranformations"
+        guard let url = components.url else {
+            completion(.failure(.malformedURL))
+            return
+        }
+        
+        guard let token else {
+            completion(.failure(.unknown))
+            return
+        }
+        
+        // Crear un objeto URLComponents, para encodificarlo posteriormente
+        var urlComponents = URLComponents()
+        urlComponents.queryItems = [URLQueryItem(name: "id", value: id)]
+        
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = "POST"
+        urlRequest.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        // Encodificamos el query item de url components
+        urlRequest.httpBody = urlComponents.query?.data(using: .utf8)
+        print(urlRequest)
+        
+        client.request(urlRequest, using: [DGHeroTransformation].self, completion: completion)
     }
 }

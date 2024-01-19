@@ -13,6 +13,8 @@ class DetailHeroesViewController: UIViewController {
     @IBOutlet weak var heroNameLabel: UILabel!
     @IBOutlet weak var heroImageView: UIImageView!
     @IBOutlet weak var heroTextDescription: UITextView!
+    @IBOutlet weak var transformationButton: UIButton!
+    
     
     //MARK: - Model
     
@@ -32,9 +34,21 @@ class DetailHeroesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
-        
+        transformationButton?.isHidden = false
     }
+    
+
+    // MARK: - Model
+    private let model = NetworkModel.shared
+    
+    @IBAction func transformationButton(_ sender: Any) {
+                DispatchQueue.main.async {
+                    let transformationListViewController = TransformationTableViewController()
+                    self.navigationController?.setViewControllers([transformationListViewController], animated: true)
+                }
+            }
 }
+
 
 
 // MARK: - View Configuration
@@ -49,4 +63,8 @@ private extension DetailHeroesViewController {
         
     }
 }
+
+
+
+
 
