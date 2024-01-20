@@ -13,7 +13,7 @@ class DetailHeroesViewController: UIViewController {
     @IBOutlet weak var heroNameLabel: UILabel!
     @IBOutlet weak var heroImageView: UIImageView!
     @IBOutlet weak var heroTextDescription: UITextView!
-    @IBOutlet weak var transformationButton: UIButton!
+    private var transformationHeroes: [DGHeroTransformation]
     
     
     //MARK: - Model
@@ -23,6 +23,7 @@ class DetailHeroesViewController: UIViewController {
     // MARK: - Initializers
     init(heroe: DragonBallHero){
         self.heroe = heroe
+        self.transformationHeroes = []
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -34,16 +35,28 @@ class DetailHeroesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
-        transformationButton?.isHidden = false
+        
+
+        model.getTrasnformation(id:heroe.id) { [weak self] result in
+            switch result {
+            case let .success(transformationHeroe):
+                    self?.transformationHeroes = transformationHeroe
+                case let .failure(error):
+                    print("🔴 \(error)")
+                
+            }
+        }
     }
     
-
     // MARK: - Model
     private let model = NetworkModel.shared
+
     
     @IBAction func transformationButton(_ sender: Any) {
                 DispatchQueue.main.async {
                     let transformationListViewController = TransformationTableViewController()
+                    transformationListViewController.listHeroTransf = self.transformationHeroes
+                        
                     self.navigationController?.setViewControllers([transformationListViewController], animated: true)
                 }
             }

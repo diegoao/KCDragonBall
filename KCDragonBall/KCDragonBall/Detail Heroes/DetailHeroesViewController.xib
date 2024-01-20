@@ -40,7 +40,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiE-kN-J8e">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiE-kN-J8e">
                     <rect key="frame" x="109" y="751" width="175" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="TRANSFORMATION"/>
@@ -57,6 +57,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ve3-P0-6tg" secondAttribute="trailing" constant="16" id="UF0-p0-Bbh"/>
                 <constraint firstItem="d2k-nK-1O6" firstAttribute="top" secondItem="Ve3-P0-6tg" secondAttribute="bottom" constant="32" id="WJL-i6-QEd"/>
                 <constraint firstItem="Ve3-P0-6tg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="cGg-3k-Q79"/>
+                <constraint firstItem="RiE-kN-J8e" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dy7-CF-2fz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="d2k-nK-1O6" secondAttribute="bottom" constant="16" id="ghu-FE-p0G"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="RiE-kN-J8e" secondAttribute="bottom" constant="32" id="rwK-Vd-0Lj"/>
                 <constraint firstItem="qss-8f-l9e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="tsB-lA-Vnv"/>
