@@ -12,9 +12,9 @@ class TransformationTableViewCell: UITableViewCell {
     static let identifier = "TransformationTableViewCell"
     // MARK: - Outlets
    
-    @IBOutlet weak var transforImageView: UIImageView!
+
     @IBOutlet weak var TransfoText: UILabel!
-    
+    @IBOutlet weak var transforImageView: UIImageView!
     // MARK: - Configure
     
     // MARK: - Configure

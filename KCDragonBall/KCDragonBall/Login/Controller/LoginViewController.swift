@@ -29,6 +29,7 @@ class LoginViewController: UIViewController {
         ) { [weak self] result in
             switch result {
                 case let .success(token):
+                    _ = token
                     DispatchQueue.main.async {
                         let heroesListViewController = HeroListTableViewController()
                         self?.navigationController?.setViewControllers([heroesListViewController], animated: true)

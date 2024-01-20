@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,6 +20,13 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo2" translatesAutoresizingMaskIntoConstraints="NO" id="Zh8-SE-z7D">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQp-SW-4UV">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nBR-TL-8Ib">
                     <rect key="frame" x="16" y="347" width="361" height="158"/>
                     <subviews>
@@ -46,9 +53,11 @@
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dL-Os-CWN">
                             <rect key="frame" x="0.0" y="112" width="361" height="46"/>
+                            <color key="backgroundColor" red="0.81562097290000002" green="0.47730154540000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="46" id="Rd4-sj-dfN"/>
                             </constraints>
+                            <color key="tintColor" red="0.81562097290000002" green="0.47730154540000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="filled" title="LOGIN"/>
                             <connections>
@@ -61,16 +70,28 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="IQp-SW-4UV" secondAttribute="trailing" id="3Uj-Gi-eDL"/>
+                <constraint firstItem="Zh8-SE-z7D" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4Uz-G4-d9m"/>
+                <constraint firstAttribute="trailing" secondItem="Zh8-SE-z7D" secondAttribute="trailing" id="Clh-Hr-NsS"/>
                 <constraint firstItem="nBR-TL-8Ib" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="IoC-NK-3Ro"/>
+                <constraint firstAttribute="bottom" secondItem="IQp-SW-4UV" secondAttribute="bottom" id="QTD-1G-ng2"/>
+                <constraint firstItem="IQp-SW-4UV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SJd-aq-emu"/>
+                <constraint firstAttribute="bottom" secondItem="Zh8-SE-z7D" secondAttribute="bottom" id="f7o-co-Y6n"/>
                 <constraint firstItem="nBR-TL-8Ib" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="fd1-fo-tz8"/>
+                <constraint firstItem="IQp-SW-4UV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jLt-89-1dt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nBR-TL-8Ib" secondAttribute="trailing" constant="16" id="oIP-rb-Mzv"/>
+                <constraint firstItem="Zh8-SE-z7D" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qqM-fa-gl3"/>
             </constraints>
             <point key="canvasLocation" x="131" y="-11"/>
         </view>
     </objects>
     <resources>
+        <image name="fondo2" width="1080" height="1920"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

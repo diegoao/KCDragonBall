@@ -137,7 +137,6 @@ final class NetworkModel{
         urlRequest.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         // Encodificamos el query item de url components
         urlRequest.httpBody = urlComponents.query?.data(using: .utf8)
-        print(urlRequest)
         
         client.request(urlRequest, using: [DGHeroTransformation].self, completion: completion)
     }

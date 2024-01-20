@@ -54,6 +54,7 @@ final class TransformationTableViewController: UITableViewController {
             snapshot.appendSections([0])
             snapshot.appendItems(listHeroTransf)
             self.dataSource?.apply(snapshot)
+            
         
     }
 }
@@ -67,19 +68,19 @@ private extension TransformationTableViewController {
 
 // MARK: - TableView Delegate
 extension TransformationTableViewController {
-//    override func tableView(
-//        _ tableView: UITableView,
-//        didSelectRowAt indexPath: IndexPath
-//    ) {
-//        let transfor = self.listHeroTransf[indexPath.row]
-//        let detailViewController = DetailHeroesViewController(heroe: transfor)
-//        navigationController?.show(detailViewController, sender: nil)
-//    }
+    override func tableView(
+        _ tableView: UITableView,
+        didSelectRowAt indexPath: IndexPath
+    ) {
+        let transfor = self.listHeroTransf[indexPath.row]
+        let detailViewController = DetailTrasnformationViewController(heroe: transfor)
+        navigationController?.show(detailViewController, sender: nil)
+    }
  
     override func tableView(
         _ tableView: UITableView,
         heightForRowAt indexPath: IndexPath
     ) -> CGFloat {
-        120
+       155
     }
 }

@@ -66,6 +66,7 @@ class DetailHeroesViewController: UIViewController {
 // MARK: - View Configuration
 private extension DetailHeroesViewController {
     func configureView() {
+        
         heroNameLabel.text = heroe.name
         heroTextDescription.text = heroe.description
         guard let imageURL = URL(string: heroe.photo) else {
@@ -74,7 +75,6 @@ private extension DetailHeroesViewController {
         heroImageView.setImage(url: imageURL)
     }
 }
-
 
 
 

@@ -16,7 +16,6 @@ final class HeroTableViewCell: UITableViewCell {
     @IBOutlet weak var heroImageView: UIImageView!
     
     
-    // MARK: - Configure
     
     // MARK: - Configure
     func configure(with hero: DragonBallHero){
