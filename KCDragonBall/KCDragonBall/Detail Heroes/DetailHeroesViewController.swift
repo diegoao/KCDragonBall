@@ -53,13 +53,12 @@ class DetailHeroesViewController: UIViewController {
 
     
     @IBAction func transformationButton(_ sender: Any) {
-                DispatchQueue.main.async {
-                    let transformationListViewController = TransformationTableViewController()
-                    transformationListViewController.listHeroTransf = self.transformationHeroes
-                        
-                    self.navigationController?.setViewControllers([transformationListViewController], animated: true)
-                }
-            }
+        DispatchQueue.main.async {
+            let transformationListViewController = TransformationTableViewController()
+            transformationListViewController.listHeroTransf = self.transformationHeroes
+            self.navigationController?.setViewControllers([transformationListViewController], animated: true)
+        }
+    }
 }
 
 
@@ -73,7 +72,6 @@ private extension DetailHeroesViewController {
             return
         }
         heroImageView.setImage(url: imageURL)
-        
     }
 }
 

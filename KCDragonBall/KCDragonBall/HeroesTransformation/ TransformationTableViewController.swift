@@ -16,7 +16,13 @@ final class TransformationTableViewController: UITableViewController {
 
     
     
-//    private let model: NetworkModel = .shared
+    @IBAction func returnButton(_ sender: UIButton) {
+        let heroesListViewController = HeroListTableViewController()
+        self.navigationController?.setViewControllers([heroesListViewController], animated: true)
+    }
+    
+
+   
 
 
     // MARK: - View Lifecycle
