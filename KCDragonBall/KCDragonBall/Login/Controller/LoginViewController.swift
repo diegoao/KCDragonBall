@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
                 case let .success(token):
                     _ = token
                     DispatchQueue.main.async {
-                        let heroesListViewController = HeroListTableViewController()
+                        let heroesListViewController = HeroesListTableViewController()
                         self?.navigationController?.setViewControllers([heroesListViewController], animated: true)
                     }
                 case let .failure(error):

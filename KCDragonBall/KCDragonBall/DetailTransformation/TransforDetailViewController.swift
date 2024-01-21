@@ -12,10 +12,9 @@ class TransforDetailViewController: UIViewController {
     // MARK: - Outlets
 
     @IBOutlet weak var TransforNameLabel: UILabel!
-    
     @IBOutlet weak var TransfoImageView: UIImageView!
-    
     @IBOutlet weak var DescriptionLabel: UITextView!
+    
     //MARK: - Model
     
     private let heroe: DGHeroTransformation

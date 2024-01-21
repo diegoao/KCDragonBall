@@ -17,7 +17,7 @@ final class TransformationTableViewController: UITableViewController {
     
     
     @IBAction func returnButton(_ sender: UIButton) {
-        let heroesListViewController = HeroListTableViewController()
+        let heroesListViewController = HeroesListTableViewController()
         self.navigationController?.setViewControllers([heroesListViewController], animated: true)
     }
     
