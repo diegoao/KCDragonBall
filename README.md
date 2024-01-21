@@ -23,7 +23,7 @@ El proyecto trata de una App enfocada en DragonBall con la cual realizamos una c
 La práctica consta de varias pantallas:
 | ![Simulador1](https://github.com/diegoao/KCDragonBall/raw/main/KCDragonBall/Recursos%20Graficos/capturas%20app/Simulador1.png) | ![Simulador2](https://github.com/diegoao/KCDragonBall/raw/main/KCDragonBall/Recursos%20Graficos/capturas%20app/Simulador2.png) | ![Simulador3](https://github.com/diegoao/KCDragonBall/raw/main/KCDragonBall/Recursos%20Graficos/capturas%20app/Simulador3.png) | ![Simulador4](https://github.com/diegoao/KCDragonBall/raw/main/KCDragonBall/Recursos%20Graficos/capturas%20app/Simulador4.png) | ![Simulador5](https://github.com/diegoao/KCDragonBall/raw/main/KCDragonBall/Recursos%20Graficos/capturas%20app/Simulador5.png) | ![Simulador6](https://github.com/diegoao/KCDragonBall/raw/main/KCDragonBall/Recursos%20Graficos/capturas%20app/Simulador6.png) |
 | --- | --- | --- | --- | --- | --- |
-| LaunchScreen | Login | Lista de héroes | Detalles | Transformaciones | Detalles de transformaciones |
+| 1 | 2 | 3 | 4 | 5 | 6 |
 
 ```
 1. LaunchScreen -> Pantalla de inicio mientras se carga la
