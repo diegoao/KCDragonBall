@@ -59,7 +59,10 @@
                             </constraints>
                             <color key="tintColor" red="0.81562097290000002" green="0.47730154540000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="filled" title="LOGIN"/>
+                            <buttonConfiguration key="configuration" style="filled" title="LOGIN">
+                                <color key="baseForegroundColor" systemColor="tableCellPlainBackgroundColor"/>
+                                <color key="baseBackgroundColor" red="0.81562097290000002" green="0.47730154540000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </buttonConfiguration>
                             <connections>
                                 <action selector="didTapContinueButton:" destination="-1" eventType="touchUpInside" id="fqA-of-WbN"/>
                             </connections>
@@ -88,6 +91,9 @@
     <resources>
         <image name="fondo2" width="1080" height="1920"/>
         <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tableCellPlainBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="viewFlipsideBackgroundColor">

@@ -11,8 +11,8 @@
 		520BDF122B587AD0004FB698 /* TransformationTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520BDF102B587AD0004FB698 /* TransformationTableViewController.xib */; };
 		520BDF152B59BC79004FB698 /* TransformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520BDF132B59BC79004FB698 /* TransformationTableViewCell.swift */; };
 		520BDF162B59BC79004FB698 /* TransformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520BDF142B59BC79004FB698 /* TransformationTableViewCell.xib */; };
-		520BDF1A2B5BB428004FB698 /* DetailTransformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520BDF182B5BB428004FB698 /* DetailTransformationViewController.swift */; };
-		520BDF1B2B5BB428004FB698 /* DetailTransformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520BDF192B5BB428004FB698 /* DetailTransformationViewController.xib */; };
+		520BDF1F2B5C75A4004FB698 /* TransforDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520BDF1D2B5C75A4004FB698 /* TransforDetailViewController.swift */; };
+		520BDF202B5C75A4004FB698 /* TransforDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520BDF1E2B5C75A4004FB698 /* TransforDetailViewController.xib */; };
 		52485EA92B570E9900C8658B /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52485EA72B570E9900C8658B /* HeroTableViewCell.swift */; };
 		52485EAA2B570E9900C8658B /* HeroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52485EA82B570E9900C8658B /* HeroTableViewCell.xib */; };
 		52485EAD2B57154700C8658B /* UImageView+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52485EAC2B57154700C8658B /* UImageView+Remote.swift */; };
@@ -58,8 +58,8 @@
 		520BDF102B587AD0004FB698 /* TransformationTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransformationTableViewController.xib; sourceTree = "<group>"; };
 		520BDF132B59BC79004FB698 /* TransformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationTableViewCell.swift; sourceTree = "<group>"; };
 		520BDF142B59BC79004FB698 /* TransformationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransformationTableViewCell.xib; sourceTree = "<group>"; };
-		520BDF182B5BB428004FB698 /* DetailTransformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransformationViewController.swift; sourceTree = "<group>"; };
-		520BDF192B5BB428004FB698 /* DetailTransformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTransformationViewController.xib; sourceTree = "<group>"; };
+		520BDF1D2B5C75A4004FB698 /* TransforDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransforDetailViewController.swift; sourceTree = "<group>"; };
+		520BDF1E2B5C75A4004FB698 /* TransforDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransforDetailViewController.xib; sourceTree = "<group>"; };
 		52485EA72B570E9900C8658B /* HeroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTableViewCell.swift; sourceTree = "<group>"; };
 		52485EA82B570E9900C8658B /* HeroTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroTableViewCell.xib; sourceTree = "<group>"; };
 		52485EAC2B57154700C8658B /* UImageView+Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UImageView+Remote.swift"; sourceTree = "<group>"; };
@@ -123,13 +123,13 @@
 			path = HeroesTransformation;
 			sourceTree = "<group>";
 		};
-		520BDF172B5BB3A7004FB698 /* Detail Tranformation */ = {
+		520BDF1C2B5C756C004FB698 /* DetailTransformation */ = {
 			isa = PBXGroup;
 			children = (
-				520BDF182B5BB428004FB698 /* DetailTransformationViewController.swift */,
-				520BDF192B5BB428004FB698 /* DetailTransformationViewController.xib */,
+				520BDF1D2B5C75A4004FB698 /* TransforDetailViewController.swift */,
+				520BDF1E2B5C75A4004FB698 /* TransforDetailViewController.xib */,
 			);
-			path = "Detail Tranformation";
+			path = DetailTransformation;
 			sourceTree = "<group>";
 		};
 		52485EAB2B57152A00C8658B /* Extensions */ = {
@@ -172,7 +172,7 @@
 		527860412B53CED0004921C3 /* KCDragonBall */ = {
 			isa = PBXGroup;
 			children = (
-				520BDF172B5BB3A7004FB698 /* Detail Tranformation */,
+				520BDF1C2B5C756C004FB698 /* DetailTransformation */,
 				52485EB22B58582A00C8658B /* Detail Heroes */,
 				52485EAB2B57152A00C8658B /* Extensions */,
 				527860722B55B3B9004921C3 /* Login */,
@@ -360,11 +360,11 @@
 				5278604F2B53CED1004921C3 /* LaunchScreen.storyboard in Resources */,
 				52485EB62B58587000C8658B /* DetailHeroesViewController.xib in Resources */,
 				520BDF162B59BC79004FB698 /* TransformationTableViewCell.xib in Resources */,
-				520BDF1B2B5BB428004FB698 /* DetailTransformationViewController.xib in Resources */,
 				527860892B570191004921C3 /* HeroListTableViewController.xib in Resources */,
 				52485EAA2B570E9900C8658B /* HeroTableViewCell.xib in Resources */,
 				5278604C2B53CED1004921C3 /* Assets.xcassets in Resources */,
 				520BDF122B587AD0004FB698 /* TransformationTableViewController.xib in Resources */,
+				520BDF202B5C75A4004FB698 /* TransforDetailViewController.xib in Resources */,
 				527860792B55B420004921C3 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,10 +396,10 @@
 				527860432B53CED0004921C3 /* AppDelegate.swift in Sources */,
 				527860822B55C529004921C3 /* DGHeroTransformation.swift in Sources */,
 				527860452B53CED0004921C3 /* SceneDelegate.swift in Sources */,
+				520BDF1F2B5C75A4004FB698 /* TransforDetailViewController.swift in Sources */,
 				520BDF112B587AD0004FB698 /*  TransformationTableViewController.swift in Sources */,
 				52485EB52B58587000C8658B /* DetailHeroesViewController.swift in Sources */,
 				5278607E2B55BADB004921C3 /* NetworkModel.swift in Sources */,
-				520BDF1A2B5BB428004FB698 /* DetailTransformationViewController.swift in Sources */,
 				527860842B55CC04004921C3 /* LocalDataModel.swift in Sources */,
 				520BDF152B59BC79004FB698 /* TransformationTableViewCell.swift in Sources */,
 				5278607C2B55B9CB004921C3 /* APIClient.swift in Sources */,

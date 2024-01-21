@@ -1,22 +1,21 @@
 //
-//  DetailTransformationViewController.swift
+//  TransforDetailViewController.swift
 //  KCDragonBall
 //
 //  Created by Macbook Pro on 20/1/24.
 //
 
-
-
 import UIKit
 
-final class DetailTrasnformationViewController: UIViewController {
+class TransforDetailViewController: UIViewController {
     
     // MARK: - Outlets
-    @IBOutlet weak var transformationNameLabel: UILabel!
-    @IBOutlet weak var transformationTextLabel: UITextView!
-    @IBOutlet weak var transformationImage: UIImageView!
+
+    @IBOutlet weak var TransforNameLabel: UILabel!
     
+    @IBOutlet weak var TransfoImageView: UIImageView!
     
+    @IBOutlet weak var DescriptionLabel: UITextView!
     //MARK: - Model
     
     private let heroe: DGHeroTransformation
@@ -36,21 +35,20 @@ final class DetailTrasnformationViewController: UIViewController {
         super.viewDidLoad()
         configureView()
         
-    }
-    
+        }
 }
 
 
 
 // MARK: - View Configuration
- extension DetailTrasnformationViewController {
+private extension TransforDetailViewController {
     func configureView() {
-
-        transformationNameLabel.text = heroe.name
-        transformationTextLabel.text = heroe.description
-
+        
+        TransforNameLabel.text = heroe.name
+        DescriptionLabel.text = heroe.description
+        guard let imageURL = URL(string: heroe.photo) else {
+            return
         }
+        TransfoImageView.setImage(url: imageURL)
     }
-
-
-
+}

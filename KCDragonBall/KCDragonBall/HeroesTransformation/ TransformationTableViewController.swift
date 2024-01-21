@@ -73,7 +73,7 @@ extension TransformationTableViewController {
         didSelectRowAt indexPath: IndexPath
     ) {
         let transfor = self.listHeroTransf[indexPath.row]
-        let detailViewController = DetailTrasnformationViewController(heroe: transfor)
+        let detailViewController = TransforDetailViewController(heroe: transfor)
         navigationController?.show(detailViewController, sender: nil)
     }
  
