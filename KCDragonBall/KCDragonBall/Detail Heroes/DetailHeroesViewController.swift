@@ -54,7 +54,7 @@ class DetailHeroesViewController: UIViewController {
     
     @IBAction func transformationButton(_ sender: Any) {
         DispatchQueue.main.async {
-            let transformationListViewController = TransformationTableViewController()
+            let transformationListViewController = TransforTableViewController()
             transformationListViewController.listHeroTransf = self.transformationHeroes
             self.navigationController?.setViewControllers([transformationListViewController], animated: true)
         }

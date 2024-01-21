@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransforDetailViewController" customModule="KCDragonBall" customModuleProvider="target">
             <connections>
-                <outlet property="DescriptionLabel" destination="4sO-cv-hEQ" id="931-Gb-HzZ"/>
+                <outlet property="DescriptionLabel" destination="NeD-mY-CDp" id="vl6-iy-ZbO"/>
                 <outlet property="TransfoImageView" destination="aT3-m3-s4D" id="x9n-PN-hcw"/>
                 <outlet property="TransforNameLabel" destination="NH8-Lz-ylD" id="zmw-Hy-ovT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -25,49 +25,46 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fVs-z8-WgK">
-                    <rect key="frame" x="46.666666666666657" y="75" width="300" height="727"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transformation Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NH8-Lz-ylD">
-                            <rect key="frame" x="29.333333333333329" y="0.0" width="241.33333333333337" height="28.666666666666668"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aT3-m3-s4D">
-                            <rect key="frame" x="0.0" y="44.666666666666686" width="300" height="250"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="250" id="2Fe-g6-3GR"/>
-                                <constraint firstAttribute="width" constant="300" id="AG1-kM-cPl"/>
-                            </constraints>
-                        </imageView>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Transformation Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4sO-cv-hEQ">
-                            <rect key="frame" x="16" y="310.66666666666674" width="268" height="416.33333333333326"/>
-                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                        </textView>
-                    </subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aT3-m3-s4D">
+                    <rect key="frame" x="16" y="131.66666666666666" width="361" height="199.99999999999997"/>
                     <constraints>
-                        <constraint firstItem="4sO-cv-hEQ" firstAttribute="top" secondItem="aT3-m3-s4D" secondAttribute="bottom" constant="16" id="KL9-r0-IHs"/>
-                        <constraint firstItem="4sO-cv-hEQ" firstAttribute="leading" secondItem="fVs-z8-WgK" secondAttribute="leading" constant="16" id="Vsb-mF-Nvu"/>
-                        <constraint firstAttribute="trailing" secondItem="4sO-cv-hEQ" secondAttribute="trailing" constant="16" id="qPH-Gu-Sqi"/>
+                        <constraint firstAttribute="height" constant="200" id="2Fe-g6-3GR"/>
                     </constraints>
-                </stackView>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transformation Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NH8-Lz-ylD">
+                    <rect key="frame" x="35" y="87" width="241.33333333333337" height="28.666666666666686"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Transformation Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NeD-mY-CDp">
+                    <rect key="frame" x="16" y="347.66666666666674" width="361" height="386.33333333333326"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fVs-z8-WgK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5Gq-UP-1WD"/>
-                <constraint firstItem="fVs-z8-WgK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="99R-d5-tps"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fVs-z8-WgK" secondAttribute="bottom" constant="16" id="DfJ-SA-bEf"/>
+                <constraint firstItem="NeD-mY-CDp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="8se-Vd-iyL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NeD-mY-CDp" secondAttribute="bottom" constant="84" id="EW3-Lw-ELZ"/>
+                <constraint firstItem="NeD-mY-CDp" firstAttribute="top" secondItem="aT3-m3-s4D" secondAttribute="bottom" constant="16" id="IKw-IF-jYh"/>
+                <constraint firstItem="aT3-m3-s4D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="JCl-yB-Y6g"/>
+                <constraint firstItem="aT3-m3-s4D" firstAttribute="top" secondItem="NH8-Lz-ylD" secondAttribute="bottom" constant="16" id="bBx-RV-6yo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NeD-mY-CDp" secondAttribute="trailing" constant="16" id="fsj-kp-YZB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aT3-m3-s4D" secondAttribute="trailing" constant="16" id="t5D-wR-vgU"/>
             </constraints>
             <point key="canvasLocation" x="107.63358778625954" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
         <image name="fondo3" width="590" height="1189"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

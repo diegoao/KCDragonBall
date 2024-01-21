@@ -67,7 +67,7 @@ class HeroesListTableViewController: UIViewController, UITableViewDelegate {
 // MARK: - Configuration
 private extension HeroesListTableViewController {
     func setUpView() {
-        title = "Heroes list"
+        title = "HEROES LIST"
     }
 }
                
