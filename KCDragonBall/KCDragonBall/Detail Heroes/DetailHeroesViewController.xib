@@ -13,6 +13,7 @@
                 <outlet property="heroImageView" destination="Ve3-P0-6tg" id="qho-CC-Mph"/>
                 <outlet property="heroNameLabel" destination="qss-8f-l9e" id="3Lt-iv-xGO"/>
                 <outlet property="heroTextDescription" destination="m93-Wx-1Kj" id="LRz-wU-zdY"/>
+                <outlet property="transformationButton1" destination="RiE-kN-J8e" id="BnU-WW-i5E"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

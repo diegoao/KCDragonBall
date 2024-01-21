@@ -8,14 +8,14 @@
 import UIKit
 
 class TransformationTableViewCell: UITableViewCell {
+    
     // MARK: - Identifier
     static let identifier = "TransformationTableViewCell"
+    
     // MARK: - Outlets
-   
-
     @IBOutlet weak var TransfoText: UILabel!
     @IBOutlet weak var transforImageView: UIImageView!
-    // MARK: - Configure
+
     
     // MARK: - Configure
     func configure(with hero: DGHeroTransformation){

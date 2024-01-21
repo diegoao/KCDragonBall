@@ -18,15 +18,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     ) {
         // Castear UIScena a UIWindowScene
         guard let scene = (scene as? UIWindowScene) else { return }
+        
         // Instanciar un objeto Window con el Scene desempaquetado
         let window = UIWindow(windowScene: scene)
+        
         // Creammos el navigation controller
         let navigationController = UINavigationController()
+        
         // Creamos el primer view controller de nuestra aplicacion
         let loginViewController = LoginViewController()
+        
         // Añadimos el primer view controller al navigation controller
+        
         navigationController.setViewControllers([loginViewController], animated: true)
         // Hacemos el navigation controller el view controller base del Window
+        
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
         self.window = window

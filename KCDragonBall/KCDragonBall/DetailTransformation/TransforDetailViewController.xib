@@ -26,20 +26,20 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aT3-m3-s4D">
-                    <rect key="frame" x="16" y="131.66666666666666" width="361" height="199.99999999999997"/>
+                    <rect key="frame" x="16" y="154" width="361" height="200"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="200" id="2Fe-g6-3GR"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transformation Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NH8-Lz-ylD">
-                    <rect key="frame" x="35" y="87" width="241.33333333333337" height="28.666666666666686"/>
+                    <rect key="frame" x="35" y="109" width="328" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Transformation Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NeD-mY-CDp">
-                    <rect key="frame" x="16" y="347.66666666666674" width="361" height="386.33333333333326"/>
+                    <rect key="frame" x="16" y="370" width="361" height="364"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="textColor" systemColor="labelColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>

@@ -13,6 +13,9 @@ class DetailHeroesViewController: UIViewController {
     @IBOutlet weak var heroNameLabel: UILabel!
     @IBOutlet weak var heroImageView: UIImageView!
     @IBOutlet weak var heroTextDescription: UITextView!
+    
+    @IBOutlet weak var transformationButton1: UIButton!
+    
     private var transformationHeroes: [DGHeroTransformation]
     
     
@@ -32,31 +35,39 @@ class DetailHeroesViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Model
+    private let model = NetworkModel.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
+        transformationButton1.isHidden = true
         
 
         model.getTrasnformation(id:heroe.id) { [weak self] result in
             switch result {
             case let .success(transformationHeroe):
                     self?.transformationHeroes = transformationHeroe
+                if transformationHeroe.count > 0{
+                    DispatchQueue.main.async {
+                        self?.transformationButton1.isHidden = false
+                    }
+                }
                 case let .failure(error):
                     print("🔴 \(error)")
-                
             }
         }
     }
     
-    // MARK: - Model
-    private let model = NetworkModel.shared
 
-    
+
+    // MARK: - Button Configuration
     @IBAction func transformationButton(_ sender: Any) {
         DispatchQueue.main.async {
             let transformationListViewController = TransforTableViewController()
             transformationListViewController.listHeroTransf = self.transformationHeroes
             self.navigationController?.setViewControllers([transformationListViewController], animated: true)
+
         }
     }
 }

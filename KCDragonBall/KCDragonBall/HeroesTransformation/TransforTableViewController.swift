@@ -8,14 +8,12 @@
 import UIKit
 
 class TransforTableViewController: UIViewController, UITableViewDelegate {
-    
     typealias DataSource = UITableViewDiffableDataSource<Int,DGHeroTransformation>
     typealias Snapshot = NSDiffableDataSourceSnapshot<Int, DGHeroTransformation>
     private var dataSource: DataSource?
     var listHeroTransf: [DGHeroTransformation] = []
     
     // MARK: - Outlets
-   
     @IBOutlet weak var tableView: UITableView!
     @IBAction func returnButton(_ sender: UIButton) {
         let heroesListViewController = HeroesListTableViewController()
@@ -27,14 +25,11 @@ class TransforTableViewController: UIViewController, UITableViewDelegate {
         super.viewDidLoad()
         setUpView()
         tableView.delegate = self
-    
-
+        
         tableView.register(
             UINib(nibName: TransformationTableViewCell.identifier, bundle: nil),
             forCellReuseIdentifier: TransformationTableViewCell.identifier)
-        
-        
-        
+
         dataSource = DataSource(tableView: tableView) { tableView, indexPath, transf in
             guard let cell = tableView.dequeueReusableCell(
                 withIdentifier: TransformationTableViewCell.identifier,
@@ -47,7 +42,6 @@ class TransforTableViewController: UIViewController, UITableViewDelegate {
         }
         
         tableView.dataSource = dataSource
-    
         var snapshot = Snapshot()
         snapshot.appendSections([0])
         snapshot.appendItems(listHeroTransf)
@@ -57,6 +51,7 @@ class TransforTableViewController: UIViewController, UITableViewDelegate {
     }
 }
         
+
 // MARK: - Configuration
 private extension TransforTableViewController {
     func setUpView() {

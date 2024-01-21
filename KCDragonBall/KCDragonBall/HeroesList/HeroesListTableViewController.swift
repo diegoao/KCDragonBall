@@ -12,7 +12,6 @@ class HeroesListTableViewController: UIViewController, UITableViewDelegate {
     typealias Snapshot = NSDiffableDataSourceSnapshot<Int, DragonBallHero>
     
     // MARK: - Outlets
-   
     @IBOutlet weak var tableView: UITableView!
    
     // MARK: - Models
@@ -64,13 +63,15 @@ class HeroesListTableViewController: UIViewController, UITableViewDelegate {
     }
 }
         
+
 // MARK: - Configuration
 private extension HeroesListTableViewController {
     func setUpView() {
         title = "HEROES LIST"
     }
 }
-               
+     
+
 // MARK: - TableView Delegate
 extension HeroesListTableViewController {
    func tableView(

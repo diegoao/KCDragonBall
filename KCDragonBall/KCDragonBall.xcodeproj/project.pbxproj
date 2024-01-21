@@ -15,6 +15,8 @@
 		520BDF252B5D1C84004FB698 /* HeroesListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520BDF232B5D1C84004FB698 /* HeroesListTableViewController.xib */; };
 		520BDF2A2B5D3F1B004FB698 /* TransforTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520BDF282B5D3F1B004FB698 /* TransforTableViewController.swift */; };
 		520BDF2B2B5D3F1B004FB698 /* TransforTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520BDF292B5D3F1B004FB698 /* TransforTableViewController.xib */; };
+		520BDF2F2B5D50F3004FB698 /* NetworkModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520BDF2E2B5D50F3004FB698 /* NetworkModelTest.swift */; };
+		520BDF322B5D539F004FB698 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520BDF312B5D539F004FB698 /* MockURLProtocol.swift */; };
 		52485EA92B570E9900C8658B /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52485EA72B570E9900C8658B /* HeroTableViewCell.swift */; };
 		52485EAA2B570E9900C8658B /* HeroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52485EA82B570E9900C8658B /* HeroTableViewCell.xib */; };
 		52485EAD2B57154700C8658B /* UImageView+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52485EAC2B57154700C8658B /* UImageView+Remote.swift */; };
@@ -62,6 +64,8 @@
 		520BDF232B5D1C84004FB698 /* HeroesListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroesListTableViewController.xib; sourceTree = "<group>"; };
 		520BDF282B5D3F1B004FB698 /* TransforTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransforTableViewController.swift; sourceTree = "<group>"; };
 		520BDF292B5D3F1B004FB698 /* TransforTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransforTableViewController.xib; sourceTree = "<group>"; };
+		520BDF2E2B5D50F3004FB698 /* NetworkModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModelTest.swift; sourceTree = "<group>"; };
+		520BDF312B5D539F004FB698 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		52485EA72B570E9900C8658B /* HeroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTableViewCell.swift; sourceTree = "<group>"; };
 		52485EA82B570E9900C8658B /* HeroTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroTableViewCell.xib; sourceTree = "<group>"; };
 		52485EAC2B57154700C8658B /* UImageView+Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UImageView+Remote.swift"; sourceTree = "<group>"; };
@@ -132,6 +136,14 @@
 			path = DetailTransformation;
 			sourceTree = "<group>";
 		};
+		520BDF302B5D535B004FB698 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				520BDF312B5D539F004FB698 /* MockURLProtocol.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		52485EAB2B57152A00C8658B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,7 +203,9 @@
 		527860582B53CED1004921C3 /* KCDragonBallTests */ = {
 			isa = PBXGroup;
 			children = (
+				520BDF302B5D535B004FB698 /* Helpers */,
 				527860592B53CED1004921C3 /* KCDragonBallTests.swift */,
+				520BDF2E2B5D50F3004FB698 /* NetworkModelTest.swift */,
 			);
 			path = KCDragonBallTests;
 			sourceTree = "<group>";
@@ -412,6 +426,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520BDF322B5D539F004FB698 /* MockURLProtocol.swift in Sources */,
+				520BDF2F2B5D50F3004FB698 /* NetworkModelTest.swift in Sources */,
 				5278605A2B53CED1004921C3 /* KCDragonBallTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

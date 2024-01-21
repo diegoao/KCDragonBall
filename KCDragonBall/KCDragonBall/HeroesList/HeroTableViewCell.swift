@@ -10,8 +10,8 @@ import UIKit
 final class HeroTableViewCell: UITableViewCell {
     // MARK: - Identifier
     static let identifier = "HeroTableViewCell"
+    
     // MARK: - Outlets
-   
     @IBOutlet weak var heroNameLabel: UILabel!
     @IBOutlet weak var heroImageView: UIImageView!
     

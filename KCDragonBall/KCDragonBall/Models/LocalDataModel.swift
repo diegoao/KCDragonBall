@@ -7,6 +7,8 @@
 
 import Foundation
 
+// MARK: - LocalDataModel
+
 struct LocalDataModel {
     private enum Constants {
         static let tokenKey = "KCToken"

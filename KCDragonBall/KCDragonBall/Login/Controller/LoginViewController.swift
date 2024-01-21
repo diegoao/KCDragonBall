@@ -18,10 +18,11 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         MessageErrorView.isHidden = true
     }
+    
     // MARK: - Model
     private let model = NetworkModel.shared
         
-    // MARK: - Acciones
+    // MARK: - Actions
     
     @IBAction func didTapContinueButton( _ sender: Any ){
         model.login(
