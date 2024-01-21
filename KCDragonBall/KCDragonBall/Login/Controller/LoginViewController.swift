@@ -12,10 +12,11 @@ class LoginViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
+    @IBOutlet weak var MessageErrorView: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        MessageErrorView.isHidden = true
     }
     // MARK: - Model
     private let model = NetworkModel.shared
@@ -35,6 +36,9 @@ class LoginViewController: UIViewController {
                         self?.navigationController?.setViewControllers([heroesListViewController], animated: true)
                     }
                 case let .failure(error):
+                    DispatchQueue.main.async {
+                        self?.MessageErrorView.isHidden = false
+                    }
                     print("🔴 \(error)")
             }
         }

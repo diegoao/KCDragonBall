@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="KCDragonBall" customModuleProvider="target">
             <connections>
+                <outlet property="MessageErrorView" destination="HKR-gg-2ZN" id="JH4-Ib-9ri"/>
                 <outlet property="emailTextField" destination="S77-uL-m3A" id="u2p-W8-Xe1"/>
                 <outlet property="passwordTextField" destination="e6d-Bw-72M" id="X2W-Mm-TdK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
